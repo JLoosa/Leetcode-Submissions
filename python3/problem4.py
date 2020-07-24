@@ -17,6 +17,6 @@ class Solution:
             return (lst[mid-1] + lst[mid])/2
 
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
-        # Time complexity may be in excess of O(log(n+m)
+        # TODO: Time complexity is in excess of O(log(n+m). Revisit this problem in the future
         return self.median(sorted(nums1 + nums2))
 
