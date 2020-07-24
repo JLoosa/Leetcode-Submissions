@@ -26,18 +26,20 @@ class Solution:
         return val
 
     def to_list(self, number: int) -> ListNode:
+        if not number:
+            return ListNode(0)
         node = None
         exp_raw = log10(number)
         exp = int(exp_raw)
         while exp >= 0:
-            power = 10 ** exp
-            cur = ListNode(int(number / power))
+            power = 10**exp
+            cur = ListNode(int(number/power))
             number = number % power
             if node:
                 cur.next = node
             node = cur
             exp -= 1
-            if not number:
+            if exp < 0:
                 break
         return node
 
