@@ -2,6 +2,9 @@
 # Name: "Two Sum"
 # URL: https://leetcode.com/problems/two-sum/
 # Date: 2020-07-24
+from typing import List
+
+
 class Solution:
 
     # Solution using nested loops
