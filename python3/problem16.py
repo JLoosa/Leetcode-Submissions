@@ -1,4 +1,4 @@
-# Leetcode Problem 19
+# Leetcode Problem 16
 # Name: "3Sum Closest"
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/3sum-closest/
@@ -10,7 +10,7 @@ class Solution:
 
     # Approach: Find the first number, then use a two-pointer scan like was done in problem 15
     def threeSumClosest(self, nums: List[int], target: int) -> int:
-        nums = sorted(nums)
+        nums.sort()
         length = len(nums)
         if length < 3:
             return []
